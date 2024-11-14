@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nitesh  Portfolio</title>
+    <style>
+        /* Basic Reset and Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f0f0f5;
+            color: #2d2d2d;
+            line-height: 1.6;
+        }
+        a {
+            text-decoration: none;
+            color: #2fcdd5;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #2fcdd5;
+            padding: 10px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .navbar a {
+            color: #fff;
+            margin: 0 15px;
+            font-size: 1.1em;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        .navbar a:hover {
+            color: #f4f4f4;
+        }
+
+        /* Container */
+        .container {
+            max-width: 850px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .header h1 {
+            font-size: 2.8em;
+            color: #2d2d2d;
+            margin-bottom: 10px;
+        }
+        .header p.intro {
+            font-size: 1.3em;
+            color: #555;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: #2fcdd5;
+            color: #fff;
+            border-radius: 5px;
+            font-size: 1em;
+            margin-top: 15px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #2fcdd5;
+        }
+
+        /* Sections */
+        .section {
+            margin: 40px 0;
+            padding: 25px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            color: #2d2d2d;
+            text-align: center;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+            border-bottom: 2px solid #2fcdd5;
+            padding-bottom: 5px;
+        }
+        .section ul {
+            list-style-type: square;
+            padding-left: 20px;
+            color: #555;
+        }
+        .section ul li {
+            padding: 8px 0;
+            font-size: 1.1em;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+            border-radius: 0 0 10px 10px;
+        }
+        .footer a {
+            color: #ff7f50;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .navbar a {
+                margin: 0 10px;
+                font-size: 0.9em;
+            }
+            .header h1 {
+                font-size: 2.2em;
+            }
+            .section h2 {
+                font-size: 1.6em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#extra">Extra-Curricular</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>Nitesh Sharma</h1>
+            <p class="intro">Electronics and Computer Science Engineer | Full Stack Developer</p>
+            <a href="resume.pdf" download class="btn">Download Resume</a>
+        </div>
+
+        <!-- About Me Section -->
+        <div class="section" id="about">
+            <h2>About Me</h2>
+            <p>I am pursuing a Bachelor of Engineering in Electronics and Computer Science from Fr. Conceicao Rodrigues College of Engineering, Mumbai University. I am passionate about web development and community service.</p>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="section" id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li><strong>Languages:</strong> C, C++, Python</li>
+                <li><strong>Web Development:</strong> HTML, CSS, JavaScript, React.js, Node.js</li>
+                <li><strong>Databases:</strong> PostgreSQL, MongoDB</li>
+                <li><strong>Business Tools:</strong> SQL.</li>
+                <li><strong>Soft Skills:</strong> Effective Communication, Management</li>
+            </ul>
+        </div>
+
+        <!-- Projects Section -->
+        <div class="section" id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>Life Care, Full Stack</strong> - <a href="https://life-care-remastered.vercel.app/" target="_blank">Visit Project</a><br>
+                    A healthcare patient management app with appointment booking, scheduling, and SMS notifications.</li>
+            </ul>
+        </div>
+
+        <!-- Extra-Curricular Section
+        <div class="section" id="extra">
+            <h2>Extra-Curricular</h2>
+            <ul>
+                <li><strong>Event Coordinator, National Service Scheme</strong> - Organized 35+ activities, increasing engagement by 40%.</li>
+                <li><strong>Head of Marketing and PR, Entrepreneurship Cell</strong> - Organized events like Formula Unicorn, overseeing marketing and logistics.</li>
+            </ul>
+        </div> -->
+
+        <!-- Education Section -->
+        <div class="section" id="education">
+            <h2>Education</h2>
+            <ul>
+                <li><strong>Bachelor of Engineering (B.E.)</strong> - Electronics and Computer Science, Fr. Conceicao Rodrigues College of Engineering, Mumbai University, CGPA: 7/10</li>
+            </ul>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer" id="contact">
+            <p>Connect with me: 
+                <a href="https://www.linkedin.com/in/nitesh-sharma-494aab230/4" target="_blank">LinkedIn</a> | 
+                <a href="https://www.instagram.com/nit_esh_576/" target="_blank">Instagram</a>
+            </p>
+            <p>&copy; 2024 Ronak Raut</p>
+        </div>
+    </div>
+
+</body>
+</html>
